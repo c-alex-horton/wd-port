@@ -1,0 +1,5 @@
+{
+  "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: main]",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
