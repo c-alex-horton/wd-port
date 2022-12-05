@@ -1,0 +1,40 @@
+.skillIcon {
+  text-align: center;
+  transition-duration: 100ms;
+  img {
+    border-radius: 100%;
+    box-shadow: 0px 0px rgba($color: indigo, $alpha: 0.8);
+    margin: 0 0 10px;
+  }
+  &:hover {
+    transform: scale(1.1);
+    img {
+      border-radius: 100%;
+      box-shadow: 5px 5px 5px rgba($color: rgb(26, 8, 38), $alpha: 0.8);
+    }
+  }
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+  button {
+    margin: 40px 0;
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .skillCaddy {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+  }
+}

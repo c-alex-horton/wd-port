@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Layout.module.scss'
 import Header from './Header/Header'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -10,6 +11,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           backgroundImage:
             'linear-gradient(to right top, #681766, #511451, #4b104b, #361137, #2d102e, #2c102e, #2c102f, #2b102f, #331239, #3a1444, #421750, #49195c)',
         }}></div>
+      <div className={styles.backgroundAnimation}>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <Header />
       {children}
     </main>
