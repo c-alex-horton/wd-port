@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Title.module.scss'
 
 export enum titleType {
   section = 'section',
@@ -14,15 +15,11 @@ const Title = ({
 }) => {
   switch (type) {
     case 'section':
-      return (
-        <h2 className='text-3xl text-calb-hotpink my-10  drop-shadow-lg'>
-          {children}
-        </h2>
-      )
+      return <h2 className={styles.title}>{children}</h2>
     case 'feature':
-      return <h3 className='text-xl text-calb-hotpink my-10'>{children}</h3>
+      return <h3 className={styles.featureTitle}>{children}</h3>
     default:
-      return <h1 className='text-calb-hotpink'>{children}</h1>
+      return <h1 className=''>{children}</h1>
   }
 }
 

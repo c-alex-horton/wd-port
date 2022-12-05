@@ -1,5 +1,6 @@
 // @refresh reset
 import Rive from '@rive-app/react-canvas'
+import styles from './Hero.module.scss'
 
 const Hero = () => {
   //   const { rive, RiveComponent } = useRive({
@@ -8,22 +9,20 @@ const Hero = () => {
   //     stateMachines: 'State Machine 1',
   //   })
   return (
-    <section className='max-w-6xl w-full px-10 '>
-      <div className='mt-10'>
-        <p>Hi, my name is</p>
-        <h1 className='text-5xl font-semibold text-calb-hotpink'>
-          Caleb Horton
-        </h1>
+    <section className={styles.hero}>
+      <div className={styles.topTitle}>
+        <div>
+          <p>Hi, my name is</p>
+          <h1>Caleb Horton</h1>
+        </div>
       </div>
-      <div className='w-full h-[30vw] min-h-[300px] mt-[-50px] max-w-[800]'>
+      <div className={styles.riveContainer}>
         <Rive src='porthero-anim.riv' stateMachines={'State Machine 1'} />
       </div>
-      <div className='mt-10 flex justify-end'>
+      <div className={styles.bottomTitle}>
         <div>
           <p>and I&apos;m a</p>
-          <h1 className='text-5xl font-semibold text-calb-hotpink'>
-            Web Developer
-          </h1>
+          <h1>Web Developer</h1>
         </div>
       </div>
     </section>

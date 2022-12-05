@@ -1,7 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@import '../node_modules/reset-css/reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 
@@ -11,9 +9,22 @@ body {
   margin: 0;
   font-family: 'Ubuntu', Ubuntu, sans-serif;
   --max-width: 1200px;
+  --mobile: 550px;
   --light-pink: #E8B8E5;
   --hot-pink: #F26CD5;
   --purple: #2C1535;
+}
+
+li {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+h1 {
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -23,6 +34,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: var(--hot-pink);
 }
 
 @media (prefers-color-scheme: dark) {
