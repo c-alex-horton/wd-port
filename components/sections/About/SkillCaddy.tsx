@@ -32,7 +32,7 @@ const SkillCaddy = () => {
       <div className={styles.skillsSection}>
         <Title type={titleType.feature}>Featured Skills</Title>
         <div
-          className={styles.skillCaddy}
+          className={styles.skillCaddyFlex}
           style={{ justifyContent: 'flex-start' }}>
           {skills.map((skill) => {
             return <Badge key={skill}>{skill}</Badge>
@@ -46,7 +46,7 @@ const SkillCaddy = () => {
   return (
     <div className={styles.skillsSection}>
       <Title type={titleType.feature}>Featured Skills</Title>
-      <div className={styles.skillCaddy}>
+      <div className={styles.skillCaddyGrid}>
         {icons.map((icon) => {
           return <SkillIcon key={icon.name} icon={icon.icon} name={icon.name} />
         })}

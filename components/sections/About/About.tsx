@@ -3,21 +3,22 @@ import Image from 'next/image'
 import profilePic from '../../../public/caleb-profile.png'
 import SkillCaddy from './SkillCaddy'
 import Title, { titleType } from '../../Library/Title'
+import styles from './About.module.scss'
 
 const About = () => {
   return (
-    <section className='bg-calb-purple w-full mt-20  shadow-lg'>
-      <div className='container mx-auto flex items-center flex-col'>
+    <section className={styles.about}>
+      <div className={styles.container}>
         <Title type={titleType.section}>About</Title>
-        <div className='grid grid-cols-[1fr,2fr] max-w-5xl mt-10'>
-          <div className=''>
+        <div className={styles.bio}>
+          <div className={styles.profilePic}>
             <Image
               src={profilePic}
               alt='Stylized Picture of Caleb'
               className='mix-blend-screen'
             />
           </div>
-          <div className=''>
+          <div className={styles.profile}>
             <p>
               After my first foray into Web Development in 2014, I was
               imediatley hooked. Now eight years later, I can confidently say I

@@ -6,10 +6,8 @@ import About from '../components/sections/About/About'
 const page = () => {
   return (
     <Layout>
-      {/* <main className='w-full flex justify-center'> */}
       <Hero />
       <About />
-      {/* </main> */}
     </Layout>
   )
 }
