@@ -1,3 +1,33 @@
+.main {
+  min-width: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-pink);
+  .bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    background-image: linear-gradient(
+      to right top,
+      #681766,
+      #511451,
+      #4b104b,
+      #361137,
+      #2d102e,
+      #2c102e,
+      #2c102f,
+      #2b102f,
+      #331239,
+      #3a1444,
+      #421750,
+      #49195c
+    );
+  }
+}
+
 .backgroundAnimation {
   position: absolute;
   width: 100%;
