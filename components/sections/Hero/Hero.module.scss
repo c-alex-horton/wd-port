@@ -2,10 +2,19 @@
   max-width: var(--max-width);
   width: 100%;
   padding: 20px;
+  overflow: hidden;
   .topTitle {
+    position: relative;
     display: flex;
+    z-index: 10;
+    h1 {
+      text-shadow: 2px 2px 2px rgba($color: #3d0340, $alpha: 1);
+    }
     @media (max-width: 550px) {
       justify-content: center;
+      h1 {
+        font-size: 2.2rem;
+      }
     }
   }
   .riveContainer {
@@ -13,14 +22,22 @@
     width: 100%;
     height: 30vw;
     min-height: 400px;
+    min-width: 300px;
     max-width: 800px;
+    @media (max-width: 400px) {
+      margin: -50px auto 0;
+    }
   }
   .bottomTitle {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    z-index: 10;
     @media (max-width: 550px) {
       justify-content: center;
+      h1 {
+        font-size: 2.2rem;
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   color: var(--light-pink);
+  overflow-x: hidden;
   .bg {
     position: fixed;
     inset: 0;

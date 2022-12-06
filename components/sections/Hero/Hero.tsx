@@ -1,4 +1,3 @@
-// @refresh reset
 import Rive from '@rive-app/react-canvas'
 import styles from './Hero.module.scss'
 
