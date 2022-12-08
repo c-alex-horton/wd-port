@@ -27,15 +27,18 @@
   button {
     margin: 40px 0;
     text-decoration: underline;
+    background: transparent;
+    border: none;
+    color: var(--light-pink);
     &:hover {
       cursor: pointer;
     }
   }
   .skillCaddyGrid {
-    width: 80%;
+    width: 100%;
     margin: 20px auto 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     grid-gap: 1em;
     max-width: 900px;
   }

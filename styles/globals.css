@@ -42,6 +42,10 @@ h1 {
   color: var(--hot-pink);
 }
 
+p {
+  line-height: 150%;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

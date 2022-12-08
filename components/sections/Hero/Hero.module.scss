@@ -6,6 +6,7 @@
   .topTitle {
     position: relative;
     display: flex;
+
     z-index: 10;
     h1 {
       text-shadow: 2px 2px 2px rgba($color: #3d0340, $alpha: 1);
@@ -19,6 +20,8 @@
   }
   .riveContainer {
     margin: -50px auto 50px;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 30vw;
     min-height: 400px;

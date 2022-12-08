@@ -5,7 +5,7 @@ import style from './Skill.module.scss'
 const SkillIcon = ({ name, icon }: { name: string; icon: string }) => {
   return (
     <div className={style.skillIcon}>
-      <Image src={icon} alt={name} />
+      <Image src={icon} alt={name} width={'100'} />
       <h4>{name}</h4>
     </div>
   )
