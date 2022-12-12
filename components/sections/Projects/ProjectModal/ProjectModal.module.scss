@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modalContent {
+    background-color: var(--purple);
+    padding: 25px;
+    border-radius: 25px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #160915;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--light-pink);
+      border-radius: 10px;
+    }
+    img {
+      margin-top: 5px;
+      border-radius: 25px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .modalBackground {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 998;
+  }
+  .skillCaddyFlex {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .links {
+    font-size: 1.5rem;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .close {
+    position: absolute;
+    size: 2rem;
+    top: 15px;
+    left: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
