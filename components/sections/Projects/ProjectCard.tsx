@@ -14,7 +14,7 @@ const ProjectCard = ({ data }: { data: any }) => {
     <div>
       <ProjectModal isOpen={isOpen} handle={handleModal} data={data} />
       <div className={styles.projectCard} onClick={handleModal}>
-        <Image src={data.image} alt='' />
+        <Image src={data.image} alt='' draggable={false} />
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ const ProjectModal = ({
     <div className={styles.modal}>
       <div className={styles.modalBackground} onClick={handle}></div>
       <div className={styles.modalContent}>
-        <div className={styles.close}>
+        <div className={styles.close} aria-label='Close Popup'>
           <RiCloseCircleFill onClick={handle} />
         </div>
         <Title type={titleType.section}>{data.name}</Title>
