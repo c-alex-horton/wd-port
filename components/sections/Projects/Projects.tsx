@@ -6,14 +6,14 @@ import projects from '../../../data/projects'
 
 const Projects = () => {
   return (
-    <div className={styles.project}>
+    <section className={styles.project} id={'projects'}>
       <Title type={titleType.section}>Projects</Title>
       <div className={styles.projectCaddy}>
         {projects.map((proj) => {
           return <ProjectCard key={proj.name} data={proj} />
         })}
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Contact.module.scss'
 import Title, { titleType } from '../../Library/Title'
-import { json } from 'stream/consumers'
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -51,7 +50,7 @@ const Contact = () => {
   }
 
   return (
-    <div className={styles.contact}>
+    <section className={styles.contact} id={'contact'}>
       <Title type={titleType.section}>Contact</Title>
       <form>
         <label htmlFor='name'>Name</label>
@@ -76,7 +75,7 @@ const Contact = () => {
           onChange={(e) => handleChange(e)}></textarea>
         <button onClick={(e) => handleSubmit(e)}>Submit</button>
       </form>
-    </div>
+    </section>
   )
 }
 

@@ -4,7 +4,7 @@ import styles from './Work.module.scss'
 
 const Work = () => {
   return (
-    <div className={styles.work}>
+    <section className={styles.work} id={'work'}>
       <Title type={titleType.section}>Work</Title>
       <div className={styles.job}>
         <h2>J Paul Jones LP</h2>
@@ -22,7 +22,7 @@ const Work = () => {
           <h4>Jun 2016 - Dec 2021</h4>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

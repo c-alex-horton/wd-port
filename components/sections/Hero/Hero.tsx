@@ -8,7 +8,7 @@ const Hero = () => {
   //     stateMachines: 'State Machine 1',
   //   })
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id={'hero'}>
       <div className={styles.topTitle}>
         <div>
           <p>Hi, my name is</p>

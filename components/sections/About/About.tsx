@@ -7,7 +7,7 @@ import styles from './About.module.scss'
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id={'about'}>
       <div className={styles.container}>
         <Title type={titleType.section}>About</Title>
         <div className={styles.bio}>
