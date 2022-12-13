@@ -15,6 +15,9 @@ const ProjectCard = ({ data }: { data: any }) => {
       <ProjectModal isOpen={isOpen} handle={handleModal} data={data} />
       <div className={styles.projectCard} onClick={handleModal}>
         <Image src={data.image} alt='' draggable={false} />
+        <div className={styles.overlay}>
+          <h1>{data.name}</h1>
+        </div>
       </div>
     </div>
   )
