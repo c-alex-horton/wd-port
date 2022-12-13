@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Contact.module.scss'
 import Title, { titleType } from '../../Library/Title'
+import { json } from 'stream/consumers'
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -17,8 +18,31 @@ const Contact = () => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const sendMessage = async () => {
+    try {
+      const res = await fetch(`/api/contact`, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      })
+
+      const data = await res.json()
+
+      console.log(data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const handleSubmit = async (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
     e.preventDefault()
+
+    await sendMessage()
+
     setForm({
       name: '',
       email: '',
