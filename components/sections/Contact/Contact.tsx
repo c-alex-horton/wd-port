@@ -55,6 +55,7 @@ const Contact = () => {
       <form>
         <label htmlFor='name'>Name</label>
         <input
+          placeholder='John Doe'
           aria-label='Full Name'
           type='text'
           name='name'
@@ -63,6 +64,7 @@ const Contact = () => {
         />
         <label htmlFor='email'>Email</label>
         <input
+          placeholder='name@example.com'
           aria-label='Email'
           type='email'
           name='email'
@@ -71,6 +73,7 @@ const Contact = () => {
         />
         <label htmlFor='message'>Message</label>
         <textarea
+          placeholder='Type your message here'
           aria-label='Message'
           name='message'
           id='message'
