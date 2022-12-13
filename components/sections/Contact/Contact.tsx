@@ -59,11 +59,13 @@ const Contact = () => {
           aria-label='Full Name'
           type='text'
           name='name'
+          id='name'
           value={form.name}
           onChange={(e) => handleChange(e)}
         />
         <label htmlFor='email'>Email</label>
         <input
+          id='email'
           placeholder='name@example.com'
           aria-label='Email'
           type='email'
