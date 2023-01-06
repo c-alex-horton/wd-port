@@ -19,6 +19,14 @@
       border: none;
       height: 2px;
     }
+    ul {
+      li {
+        margin-top: 15px;
+        list-style-type: disc;
+        margin-left: 25px;
+        line-height: 130%;
+      }
+    }
     .details {
       display: flex;
       gap: 1rem;

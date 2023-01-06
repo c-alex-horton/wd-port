@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './ProjectModal.module.scss'
 import Title, { titleType } from '../../../Library/Title'
 import Image from 'next/image'
